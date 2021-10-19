@@ -15,7 +15,8 @@ A bug/issue tracking application. Demo can be found hosted on (coming soon).
 #### Database
 1. Create a PostgreSQL database called 'bugout' using **psql** or database IDE:  
    `CREATE DATABASE bugout`
-2. Create tables and insert test data by executing the **psql** command  
+2. Create tables and insert test data by executing the **psql** command
+   `\i src\main\resources\import.sql`
 
 #### Spring Profiles
 

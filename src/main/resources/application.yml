@@ -3,9 +3,9 @@ spring:
   h2:
     console:
       enabled: true
-      path: /h2
+      path: /h2 # http://localhost:8080/h2 and input the URL and username below (no password required)
   datasource:
-    url: jdbc:h2:file:~/bugout
+    url: jdbc:h2:mem:bugout
     driverClassName: org.h2.Driver
     username: sa
     password:
