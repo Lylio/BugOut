@@ -1,0 +1,72 @@
+## Default Database Properties (In memory H2)
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    url: jdbc:h2:file:~/bugout
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+
+---
+
+## Dev Database Properties (local PostgreSQL)
+spring:
+  profiles: dev
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bugout
+    driver-class-name: org.postgresql.Driver
+    username: root
+    password: P@$$w0rd
+
+---
+
+## Prod Database Properties (Google Cloud SQL)
+spring:
+  profiles: prod
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url:
+    driver-class-name: org.postgresql.Driver
+    username:
+    password:
+
+# BANNER
+spring.banner.location: classpath:banner.txt
+
+# ENDPOINT MANAGEMENT
+management:
+  endpoint:
+    info:
+      enabled: true
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+    health:
+      show-details: always
+      enabled: true
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+
