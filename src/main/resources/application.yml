@@ -12,39 +12,7 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
 
----
 
-## Dev Database Properties (local PostgreSQL)
-spring:
-  profiles: dev
-  jpa:
-    hibernate:
-      ddl-auto: none
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-  datasource:
-    url: jdbc:postgresql://localhost:5432/bugout
-    driver-class-name: org.postgresql.Driver
-    username: root
-    password: P@$$w0rd
-
----
-
-## Prod Database Properties (Google Cloud SQL)
-spring:
-  profiles: prod
-  jpa:
-    hibernate:
-      ddl-auto: none
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-  datasource:
-    url:
-    driver-class-name: org.postgresql.Driver
-    username:
-    password:
 
 # BANNER
 spring.banner.location: classpath:banner.txt
