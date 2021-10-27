@@ -12,6 +12,8 @@ A bug/issue tracking application. Demo can be found hosted on Heroku: https://bu
 - Angular
 - PostgreSQL
 
+### Setup & Launch
+
 #### Database
 1. Create a PostgreSQL database called 'bugout' using **psql** or database IDE:  
    `CREATE DATABASE bugout`
