@@ -5,7 +5,7 @@
 # BugOut
 
 ### Description
-A bug/issue tracking application. Demo can be found hosted on (coming soon).
+A bug/issue tracking application. Demo can be found hosted on Heroku: https://bugout-demo.herokuapp.com/.
 
 ### Tech Stack
 - Spring Boot (JDK 8)
