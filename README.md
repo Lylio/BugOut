@@ -36,6 +36,8 @@ e.g. `java -jar -Dspring.profiles.active=dev bugout-0.0.1-SNAPSHOT.jar`
 3. Navigate to http://localhost:8080
 
 #### Maven Launch
-1. `mvn spring-boot:run`
-2. Open browser at http://localhost:8080
+1. `mvn spring-boot:run`  
+or
+2. To launch with profile - `mvn spring-boot:run -Dspring.profiles.active=dev`
+3. Open browser at http://localhost:8080
 
