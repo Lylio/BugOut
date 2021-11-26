@@ -18,13 +18,16 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top:10px;
-  color: #b1b1b1;
+  margin-top: 10px;
+  color: #bbbbbb;
 }
-
-.copyright a:link {
-  color: #6b1b85;
-}
+  .copyright a {
+    color: #bbbbbb;
+  }
+  .copyright a:hover {
+    color: #43A5B3;
+    text-decoration-line: none;
+  }
 
 article,
 aside,
@@ -6202,14 +6205,17 @@ html, body {
 .page-wrap {
   min-height: 100%;
   margin-bottom: -142px;
-  margin-top: 0px; }
+  margin-top: 0px;
+}
 
 .page-wrap:after {
   content: "";
-  display: block; }
+  display: block;
+  }
 
 .site-footer, .page-wrap:after {
-  height: 142px; }
+  height: 142px;
+}
 
 .site-footer {
   background-color: #212223;
@@ -6230,7 +6236,7 @@ html, body {
 
 .site-footer li a {
   display: block;
-  color: bbb;
+  color: #bbb;
   text-align: center;
   padding: 0px 16px 0px 0px;
   text-decoration: none;
