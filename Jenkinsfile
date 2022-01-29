@@ -32,7 +32,5 @@ node {
 		echo 'Error occurred during build process!'
 		echo e.toString()
 		currentBuild.result = 'FAILURE'
-	} finally {
-        junit '**/target/surefire-reports/TEST-*.xml'
 	}
 }
