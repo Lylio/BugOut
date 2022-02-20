@@ -10,16 +10,15 @@ node {
 	        	url: 'https://github.com/Lylio/bugout.git'
 	    }
 
-	    stage('Run Unit Tests') {
-                	        sh './mvnw test'
-                	    }
-
+	     stage('Run Unit Tests') {
+        	        sh './mvnw test'
+        	    }
 
         stage('SonarQube: Analysis') {
-                withSonarQubeEnv('SonarQube_Server') {
-                    sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar'
-            }
-        }
+                        withSonarQubeEnv('SonarQube_Server') {
+                            sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar'
+                    }
+                }
 
         stage("SonarQube: Quality Gate") {
                 sleep(time:3,unit:"SECONDS")
