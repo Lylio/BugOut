@@ -6203,7 +6203,7 @@ html, body {
   color: #1d1313; }
 
 .page-wrap {
-  min-height: 100%;
+  min-height: 75%;
   margin-bottom: -142px;
   margin-top: 0px;
 }
@@ -6211,10 +6211,14 @@ html, body {
 .page-wrap:after {
   content: "";
   display: block;
+  height: 142px;
   }
 
-.site-footer, .page-wrap:after {
-  height: 142px;
+.site-footer {
+  height: 120px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
 
 .site-footer {
@@ -6229,7 +6233,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  margin-top: 60px; }
+  margin-top: 30px; }
 
 .site-footer li {
   float: left; }
