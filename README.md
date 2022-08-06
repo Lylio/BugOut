@@ -1,16 +1,19 @@
-![](https://github.com/Lylio/image-repo/blob/master/logos/spring-boot.png?raw=true)
-![](https://github.com/Lylio/image-repo/blob/master/logos/angular.png?raw=true)
-![](https://github.com/Lylio/image-repo/blob/master/logos/postgres.png?raw=true)
-
 # BugOut
 
 ### Description
-A bug/issue tracking application. Demo can be found hosted on Heroku: https://bugout-demo.herokuapp.com/.
+A bug/issue tracking application.
 
-### Tech Stack
-- Spring Boot (JDK 8)
-- Angular
-- PostgreSQL
+|              |                                                                                                                                                                                                                                                                                                                                                            |
+|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| App Link     | [bugout.lyle.app](https://bugout.lyle.app)                                                                                                                                                                                                                                                                                                                 |                                                                                                                                                                                                                                                                                               |
+| Tech Stack   | ![Spring Boot](https://img.shields.io/badge/spring%20boot-white.svg?style=for-the-badge&logo=springboot&logoColor=6DB33F) ![React](https://img.shields.io/badge/angular-E23237.svg?style=for-the-badge&logo=angular&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/POSTGRESQL-4169E1.svg?style=for-the-badge&logo=PostgreSQL&logoColor=white) |
+| Compiler     | ![Java](https://img.shields.io/badge/JAVA%20-JDK%208-green?style=for-the-badge)                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                                                               |
+| Top Language | ![Github Language](https://img.shields.io/github/languages/top/lylio/bugout?style=for-the-badge)                                                                                                                                                                                                                                                           |
+| Repo Size    | ![Repo Size](https://img.shields.io/github/repo-size/lylio/bugout?style=for-the-badge)                                                                                                                                                                                                                                                                     |
+| Last Commit  | ![Github Commit Activity](https://img.shields.io/github/last-commit/lylio/bugout/main?style=for-the-badge)                                                                                                                                                                                                                                                 |
+
+
+<br />
 
 ### Setup & Launch
 
@@ -40,4 +43,8 @@ e.g. `java -jar -Dspring.profiles.active=dev bugout-0.0.1-SNAPSHOT.jar`
 or
 2. To launch with profile - `mvn spring-boot:run -Dspring.profiles.active=dev`
 3. Open browser at http://localhost:8080
+
+### Acknowledgements
+The cool repo badges, logos and code stats included in this README are courtesy of [Simple Icons](https://simpleicons.org/) and [Shields.io](https://shields.io/).
+
 
